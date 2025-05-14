@@ -19,5 +19,11 @@ export default {
 </template>
 
 <style scoped>
-
+.hero-section {
+  background-image: url('@/assets/images/fondoComida.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
 </style>

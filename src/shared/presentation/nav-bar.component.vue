@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container-xxl">
       <a class="navbar-brand me-auto" href="#">
-        <img src="" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" />
+        <img src="@/assets/images/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" />
         <span class="text-food">Food</span><span class="text-heaven">Heaven</span>
       </a>
 

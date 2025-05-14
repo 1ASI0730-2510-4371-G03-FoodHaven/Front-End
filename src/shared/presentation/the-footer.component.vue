@@ -89,5 +89,7 @@ export default {
 </template>
 
 <style scoped>
-
+.footer{
+  background-image: url('@/assets/images/fondoComida2.avif');
+}
 </style>

@@ -7,7 +7,16 @@ import pv_cenas from "@/comida/presentation/inicio/presentation/Cenas.component.
 </script>
 
 <template>
-
+  <ConfirmDialog group="add">
+    <template #container="{ message, acceptCallback }">
+      <div class="confirmDialog">
+        <p class="mensaje">{{ message.message }}</p>
+        <div class="acciones">
+          <button class="rechazar" @click="acceptCallback">{{ message.acceptLabel }}</button>
+        </div>
+      </div>
+    </template>
+  </ConfirmDialog>
   <pv_header/>
   <pv_desayunos/>
   <pv_almuerzos/>

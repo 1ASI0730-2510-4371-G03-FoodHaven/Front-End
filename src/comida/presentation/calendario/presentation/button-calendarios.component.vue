@@ -1,8 +1,9 @@
 <script setup>
 import { useConfirm } from 'primevue/useconfirm'
+const confirm = useConfirm()
+
 import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
-const confirm = useConfirm()
 
 function confirmarAccion() {
   confirm.require({

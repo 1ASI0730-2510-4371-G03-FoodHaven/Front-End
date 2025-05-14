@@ -114,5 +114,10 @@ export default {
         errorLength: "La contraseña debe tener al menos 6 caracteres.",
         success: "Registro exitoso.",
         or: "ó"
+    },
+    title: {
+        desayuno: "Desayunos",
+        almuerzo: "Almuerzos",
+        cena: "Cenas",
     }
 };

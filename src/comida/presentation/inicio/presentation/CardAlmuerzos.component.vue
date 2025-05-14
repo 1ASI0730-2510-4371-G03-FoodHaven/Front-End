@@ -5,6 +5,20 @@ const props = defineProps({
   comida: {type: Object, required: true}
 });
 
+
+import { useConfirm } from 'primevue/useconfirm'
+const confirm = useConfirm()
+
+function confirmarAccion() {
+  confirm.require({
+    group: 'add',
+    message: 'Almuerzo añadido',
+    acceptLabel: 'Aceptar',
+    accept: () => {
+      console.log('Navegar al inicio')
+    }
+  })
+}
 </script>
 
 <template>
@@ -28,18 +42,18 @@ const props = defineProps({
 
     <!-- Título y descripción -->
     <template #title>
-      <h2 class="card-title">{{comida.nombre}}</h2>
+      <h2 class="card-title">{{ comida.nombre }}</h2>
     </template>
     <template #subtitle>
 
 
-      <p class="card-subtitle">{{ comida.complemento }}</p>
+      <p class="card-subtitle">{{comida.complemento}}</p>
     </template>
 
     <!-- Botón -->
     <template #footer>
       <div class="card-footer">
-        <Button label="Añadir" class="add-button" />
+        <Button @click="confirmarAccion" label="Añadir" class="add-button" />
       </div>
     </template>
   </Card>
@@ -107,5 +121,8 @@ const props = defineProps({
   width: 80%;
   margin: 10px auto
 }
-
+.card-image{
+  width: 100%;
+  height: 200px;
+}
 </style>

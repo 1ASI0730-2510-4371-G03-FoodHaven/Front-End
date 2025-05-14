@@ -15,7 +15,7 @@ export default {
             class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
         >
           <div class="d-flex align-items-center mb-4">
-            <img src="" alt="Clara Cortés" class="rounded-circle me-4" width="80" height="80" />
+            <img src="@/assets/images/resena3.jpg" alt="Clara Cortés" class="rounded-circle me-4" width="80" height="80" />
             <div>
               <h2 class="mb-1 fs-4">Clara Cortés</h2>
               <small class="text-secondary fs-6">Desarrolladora Web</small
@@ -37,7 +37,7 @@ export default {
             class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
         >
           <div class="d-flex align-items-center mb-4">
-            <img src="" alt="Leonardo Mesías" class="rounded-circle me-4" width="80" height="80" />
+            <img src="@/assets/images/resena2.jpg" alt="Leonardo Mesías" class="rounded-circle me-4" width="80" height="80" />
             <div>
               <h2 class="mb-1 fs-4">Leonardo Mesías</h2>
               <small class="text-secondary fs-6">Padre de Familia</small
@@ -58,7 +58,7 @@ export default {
             class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
         >
           <div class="d-flex align-items-center mb-4">
-            <img src="" alt="Daniel Moreno" class="rounded-circle me-4" width="80" height="80" />
+            <img src="@/assets/images/resena1.jpg" alt="Daniel Moreno" class="rounded-circle me-4" width="80" height="80" />
             <div>
               <h2 class="mb-1 fs-4">Daniel Moreno</h2>
               <small class="text-secondary fs-6">Gerente de Marketing</small

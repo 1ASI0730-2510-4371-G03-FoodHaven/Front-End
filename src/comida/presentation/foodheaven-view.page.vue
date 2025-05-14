@@ -1,3 +1,7 @@
+<script setup>
+import ToolbarComponent from '@/comida/presentation/tool-bar.component.vue';
+</script>
+
 <template>
   <div class="foodheaven-view">
 
@@ -7,10 +11,6 @@
     <router-view />
   </div>
 </template>
-
-<script setup>
-import ToolbarComponent from '@/comida/presentation/tool-bar.component.vue';
-</script>
 
 <style scoped>
 

@@ -1,31 +1,28 @@
 <script setup>
 import CardAlmuerzosComponent from "@/comida/presentation/inicio/presentation/CardAlmuerzos.component.vue";
 import {defineProps} from "vue";
-import {ComidaAssembler} from "@/comida/presentation/inicio/application/comida.assembler.js";
-import {RecetasApiService} from "@/comida/presentation/inicio/application/recetas-api.service.js";
+import {ComidaAssembler} from "@/comida/presentation/inicio/application/comidaAssembler.js";
+import {ComidasApiService} from "@/comida/presentation/inicio/application/comidas-api.service.js";
 import {onBeforeMount, ref} from "vue";
+import { useI18n } from 'vue-i18n';
 
-const recetasApiService = new RecetasApiService();
+const { t } = useI18n();
 
-const articles = ref([])
+const newsApiService = new ComidasApiService();
+
+const comidas = ref([])
 
 onBeforeMount(async () => {
-  articles.value = ComidaAssembler.toEntitiesFromResponse(await recetasApiService.getArticles2());
+  comidas.value = ComidaAssembler.toEntitiesFromResponse(await newsApiService.getArticles2());
 
 });
 
-defineProps({
-  comidas: {
-    type: Array,
-    required: true
-  }
-});
 
 </script>
 
 <template>
   <div class="contenedor-principal-almuerzos">
-      <h2>Almuerzos</h2>
+      <h2>{{ $t('title.almuerzo') }}</h2>
     <hr>
     <div class="contenedor-almuerzos">
       <card-almuerzos-component v-for="comida in comidas"

@@ -113,5 +113,10 @@ export default {
         errorLength: "Password must be at least 6 characters.",
         success: "Registration successful.",
         or: "or"
+    },
+    title: {
+        desayuno: "Breakfasts",
+        almuerzo: "Lunches",
+        cena: "Dinners",
     }
 };

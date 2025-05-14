@@ -1,43 +1,36 @@
-      <script setup>
-import CardDesayunosComponent from "@/comida/presentation/inicio/presentation/CardDesayunos.component.vue";
-import {defineProps} from "vue";
-import {ComidaAssembler} from "@/comida/presentation/inicio/application/comida.assembler.js";
-import {RecetasApiService} from "@/comida/presentation/inicio/application/recetas-api.service.js";
-import {onBeforeMount, ref} from "vue";
+<script setup>
+    import CardDesayunosComponent from "@/comida/presentation/inicio/presentation/CardDesayunos.component.vue";
+    import {defineProps} from "vue";
+    import {ComidaAssembler} from "@/comida/presentation/inicio/application/comidaAssembler.js";
+    import {ComidasApiService} from "@/comida/presentation/inicio/application/comidas-api.service.js";
+    import {onBeforeMount, ref} from "vue";
 
-const recetasApiService = new RecetasApiService();
+    const newsApiService = new ComidasApiService();
 
-const articles = ref([])
+    const comidas = ref([])
 
-onBeforeMount(async () => {
-  articles.value = ComidaAssembler.toEntitiesFromResponse(await recetasApiService.getArticles2());
+    onBeforeMount(async () => {
+      comidas.value = ComidaAssembler.toEntitiesFromResponse(await newsApiService.getArticles());
 
-});
+    });
+    import { useI18n } from 'vue-i18n';
 
-defineProps({
-  comidas: {
-    type: Array,
-    required: true
-  }
-});
+    const { t } = useI18n();
 
 </script>
 
-<template>
+      <template>
+        <div class="contenedor-principal-desayunos">
+          <h2>{{ $t('title.desayuno') }}</h2>
+          <hr>
+          <div class="contenedor-desayunos">
 
-  <div class="contenedor-principal-desayunos">
-    <h2>Desayunos</h2>
-    <hr>
-
-    <div class="contenedor-desayunos">
-      <card-desayunos-component v-for="comida in comidas"
-                                :key="comida.id"
-                                :comida="comida"/>
-    </div>
-  </div>
-
-
-</template>
+            <card-desayunos-component v-for="comida in comidas"
+                                      :key="comida.id"
+                                      :comida="comida"/>
+          </div>
+        </div>
+      </template>
 
 <style scoped>
 .contenedor-desayunos{
