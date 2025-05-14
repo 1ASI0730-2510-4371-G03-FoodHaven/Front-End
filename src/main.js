@@ -1,5 +1,5 @@
 import './assets/main.css';
-import './firebase.js'; // ⬅️ Inicializa Firebase al arrancar la app
+import './firebase.js'; 
 
 import 'primeicons/primeicons.css';
 import i18n from './component/i18n.js';
@@ -21,7 +21,7 @@ import {
     InputText,
     Row, SplitButton
 } from "primevue";
-
+// Uso de componentes:
 const app = createApp(App);
 app.use(router);
 app.use(PrimeVue);
