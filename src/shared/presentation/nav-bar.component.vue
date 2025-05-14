@@ -5,23 +5,15 @@
         <img src="" alt="Logo" width="50" height="50" class="d-inline-block align-text-top" />
         <span class="text-food">Food</span><span class="text-heaven">Heaven</span>
       </a>
-      <div
-          class="offcanvas offcanvas-end"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-      >
+
+      <!-- Menú lateral -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <a class="navbar-brand" href="#">
             <img src="" alt="Logo" width="30" height="24" class="d-inline-block align-text-top" />
             <span class="text-food">Food</span><span class="text-heaven">Heaven</span>
           </a>
-          <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-          ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
@@ -34,11 +26,18 @@
             <li class="nav-item"><a class="nav-link mx-lg-2" href="#contactanos">Contáctanos</a></li>
           </ul>
           <div class="d-lg-none text-center mt-3">
-            <a href="login.html" class="btn btn-outline-success w-75 rounded-pill">Iniciar Sesión</a>
+            <router-link to="/login" class="btn btn-outline-success w-75 rounded-pill">Iniciar Sesión</router-link>
           </div>
         </div>
       </div>
-      <a href="login.html" class="login-button">Iniciar Sesión</a>
+
+      <!-- Botón login + Language alineados a la derecha -->
+      <div class="d-none d-lg-flex align-items-center ms-auto gap-3">
+        <router-link to="/login" class="btn btn-outline-success rounded-pill">Iniciar Sesión</router-link>
+        <Language />
+      </div>
+
+      <!-- Botón menú hamburguesa -->
       <button
           class="navbar-toggler pe-0"
           type="button"
@@ -54,11 +53,18 @@
 </template>
 
 <script>
+import Language from "@/comida/presentation/language-switcher,component.vue";
+
 export default {
-  name: 'NavbarComponent'
+  name: 'NavbarComponent',
+  components: {Language}
 }
 </script>
 
 <style scoped>
-/* Puedes poner aquí estilos si usas clases personalizadas como text-food o text-heaven */
+.end-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
 </style>
