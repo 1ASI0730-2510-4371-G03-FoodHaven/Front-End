@@ -1,7 +1,7 @@
 <template>
   <div class="toolbar-container">
     <Toolbar class="custom-toolbar">
-      <!-- Izquierda: Logo -->
+      
       <template #start>
         <div class="logo-section">
           <img src="https://i.imgur.com/r5tfrlF.png" alt="Logo" class="logo" />
@@ -11,17 +11,17 @@
         </div>
       </template>
 
-      <!-- Centro: Navegación -->
+      
       <template #center>
         <div class="nav-links">
-          <!-- Ahora usamos i18n para traducir -->
+          
           <Button :label="$t('toolbar.home')" text class="nav-button" @click="goTo('inicio')" />
           <Button :label="$t('toolbar.calendar')" text class="nav-button" @click="goTo('calendario')" />
           <Button :label="$t('toolbar.account')" text class="nav-button" @click="goTo('cuenta')" />
         </div>
       </template>
 
-      <!-- Derecha -->
+      
       <template #end>
         <div class="end-toolbar">
           <Language />
