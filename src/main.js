@@ -21,7 +21,7 @@ import {
     InputText,
     Row, SplitButton
 } from "primevue";
-// Uso de componentes:
+// Uso de componentes importantes:
 const app = createApp(App);
 app.use(router);
 app.use(PrimeVue);
