@@ -5,11 +5,11 @@ export default {
 </script>
 
 <template>
-  <!-- Reseñas -->
+  
   <section class="container my-5" id="reseñas">
     <h1 class="text-center mb-5">Reseñas</h1>
     <div class="row g-4 justify-content-center">
-      <!-- Reseña 1 - Profesional Joven -->
+      
       <div class="col-lg-4 col-md-6 d-flex">
         <div
             class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
