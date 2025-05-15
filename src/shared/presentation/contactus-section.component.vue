@@ -18,7 +18,7 @@ export default {
 
 <template>
   <section class="container my-5" id="contactanos">
-    <h1 class="text-center mb-4">Contáctanos</h1>
+    <h1 class="text-center mb-4">{{ $t('homePage.contact') }}</h1>
     <div class="row">
       <div class="col-md-6 mb-4 mb-md-0">
         <!-- Mapa -->
@@ -37,19 +37,19 @@ export default {
         <!-- Formulario -->
         <form @submit.prevent="enviarFormulario">
           <div class="mb-3">
-            <label class="form-label">Nombre</label>
+            <label class="form-label">{{ $t('homePage.name') }}</label>
             <input v-model="nombre" type="text" class="form-control" required />
           </div>
           <div class="mb-3">
-            <label class="form-label">Correo</label>
+            <label class="form-label">{{ $t('homePage.email') }}</label>
             <input v-model="correo" type="email" class="form-control" required />
           </div>
           <div class="mb-3">
-            <label class="form-label">Número</label>
+            <label class="form-label">{{ $t('homePage.phone') }}</label>
             <input v-model="numero" type="tel" class="form-control" required />
           </div>
           <button type="submit" class="btn btn-outline-light rounded-pill w-100">
-            Contáctanos
+            {{ $t('homePage.contact') }}
           </button>
         </form>
       </div>

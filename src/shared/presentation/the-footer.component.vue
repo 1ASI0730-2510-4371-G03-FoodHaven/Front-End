@@ -13,7 +13,7 @@ export default {
       <div class="row text-center text-md-start">
         <!-- Redes sociales -->
         <div class="col-md-4 mb-4">
-          <h5>Síguenos</h5>
+          <h5>{{ $t('homePage.follow') }}</h5>
           <div class="mt-3">
             <a href="#" class="text-white me-3"
             ><i class="bi bi-facebook fs-4"></i
@@ -35,21 +35,21 @@ export default {
 
         <!-- Enlaces legales -->
         <div class="col-md-4 mb-4">
-          <h5>Información legal</h5>
+          <h5>{{ $t('homePage.info') }}</h5>
           <ul class="list-unstyled mt-3">
             <li>
               <a href="Interfaces/legal-notice.html" class="text-white text-decoration-none"
-              >Aviso legal</a
+              >{{ $t('homePage.advice') }}</a
               >
             </li>
             <li>
               <a href="Interfaces/privacy-policy.html" class="text-white text-decoration-none"
-              >Política de privacidad</a
+              >{{ $t('homePage.policyPriv') }}</a
               >
             </li>
             <li>
               <a href="Interfaces/cookies-policy.html" class="text-white text-decoration-none"
-              >Política de cookies</a
+              >{{ $t('homePage.policyCook') }}</a
               >
             </li>
           </ul>
@@ -57,21 +57,21 @@ export default {
 
         <!-- Soporte -->
         <div class="col-md-4 mb-4">
-          <h5>Soporte</h5>
+          <h5>{{ $t('homePage.support') }}</h5>
           <ul class="list-unstyled mt-3">
             <li>
               <a href="#" class="text-white text-decoration-none"
-              >Contacto con soporte</a
+              >{{ $t('homePage.contactSupport') }}</a
               >
             </li>
             <li>
               <a href="#" class="text-white text-decoration-none"
-              >Centro de ayuda</a
+              >{{ $t('homePage.help') }}</a
               >
             </li>
             <li>
               <a href="Interfaces/faq.html" class="text-white text-decoration-none"
-              >Preguntas frecuentes</a
+              >{{ $t('homePage.questions') }}</a
               >
             </li>
           </ul>
@@ -81,8 +81,7 @@ export default {
 
     <div class="bg-secundary text-center py-3 mt-4">
       <p class="mb-0 text-white">
-        &copy; 2025 <strong>FoodHeaven</strong>. Todos los derechos
-        reservados.
+        &copy; 2025 <strong>FoodHeaven</strong>. {{ $t('homePage.rights') }}
       </p>
     </div>
   </footer>

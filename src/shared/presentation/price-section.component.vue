@@ -7,7 +7,7 @@ export default {
 <template>
   <!-- Sección de Precios -->
   <section class="container my-5" id="precios">
-    <h1 class="text-center mb-4">Precios</h1>
+    <h1 class="text-center mb-4">{{ $t('homePage.price') }}</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
       <!-- Plan Estándar -->
       <div class="col d-flex">
@@ -16,18 +16,18 @@ export default {
         >
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
-              <h2 class="card-title nowrap">Plan Estándar</h2>
+              <h2 class="card-title nowrap">{{ $t('homePage.price1') }}</h2>
               <h3 class="card-subtitle text-black price nowrap">
-                S/ 400.00 / mes
+                S/ 400.00 / {{ $t('homePage.month') }}
               </h3>
               <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
-                <li>✓ Incluye almuerzo diario</li>
-                <li>✓ Control nutricional con contador de calorías</li>
-                <li>✓ Acceso completo a planificación y entregas</li>
+                <li>✓ {{ $t('homePage.planText1') }}</li>
+                <li>✓ {{ $t('homePage.planText2') }}</li>
+                <li>✓ {{ $t('homePage.planText3') }}</li>
               </ul>
             </div>
             <a href="login.html" class="btn btn-outline-light rounded-pill mt-auto"
-            >Elegir plan</a
+            >{{ $t('homePage.choose') }}</a
             >
           </div>
         </div>
@@ -40,18 +40,18 @@ export default {
         >
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
-              <h2 class="card-title nowrap">Plan Tempranero</h2>
+              <h2 class="card-title nowrap">{{ $t('homePage.price2') }}</h2>
               <h3 class="card-subtitle text-black price nowrap">
-                S/ 500.00 / mes
+                S/ 500.00 / {{ $t('homePage.month') }}
               </h3>
               <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
-                <li>✓ Incluye desayuno y almuerzo</li>
-                <li>✓ Control nutricional con contador de calorías</li>
-                <li>✓ Acceso completo a planificación y entregas</li>
+                <li>✓ {{ $t('homePage.planText4') }}</li>
+                <li>✓ {{ $t('homePage.planText2') }}</li>
+                <li>✓ {{ $t('homePage.planText3') }}</li>
               </ul>
             </div>
             <a href="login.html" class="btn btn-outline-light rounded-pill mt-auto"
-            >Elegir plan</a
+            >{{ $t('homePage.choose') }}</a
             >
           </div>
         </div>
@@ -64,18 +64,18 @@ export default {
         >
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
-              <h2 class="card-title nowrap">Plan Bajadón</h2>
+              <h2 class="card-title nowrap">{{ $t('homePage.price3') }}</h2>
               <h3 class="card-subtitle text-black price nowrap">
-                S/ 800.00 / mes
+                S/ 800.00 / {{ $t('homePage.month') }}
               </h3>
               <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
-                <li>✓ Incluye almuerzo y cena</li>
-                <li>✓ Control nutricional con contador de calorías</li>
-                <li>✓ Acceso completo a planificación y entregas</li>
+                <li>✓ {{ $t('homePage.planText5') }}</li>
+                <li>✓ {{ $t('homePage.planText2') }}</li>
+                <li>✓ {{ $t('homePage.planText3') }}</li>
               </ul>
             </div>
             <a href="login.html" class="btn btn-outline-light rounded-pill mt-auto"
-            >Elegir plan</a
+            >{{ $t('homePage.choose') }}</a
             >
           </div>
         </div>
@@ -88,30 +88,28 @@ export default {
         >
           <div class="card-body d-flex flex-column justify-content-between">
             <div>
-              <h2 class="card-title nowrap">Plan Full</h2>
+              <h2 class="card-title nowrap">{{ $t('homePage.price4') }}</h2>
               <h3 class="card-subtitle text-black price nowrap">
-                S/ 1000.00 / mes
+                S/ 1000.00 / {{ $t('homePage.month') }}
               </h3>
               <ul class="list-unstyled mt-4 mb-4 text-start mx-auto">
-                <li>✓ Incluye desayuno, almuerzo y cena</li>
-                <li>✓ Control nutricional con contador de calorías</li>
-                <li>✓ Acceso completo a planificación y entregas</li>
-                <li>✓ Soporte al cliente prioritario</li>
+                <li>✓ {{ $t('homePage.planText6') }}</li>
+                <li>✓ {{ $t('homePage.planText2') }}</li>
+                <li>✓ {{ $t('homePage.planText3') }}</li>
+                <li>✓ {{ $t('homePage.planText7') }}</li>
               </ul>
             </div>
             <a href="login.html" class="btn btn-outline-light rounded-pill mt-auto"
-            >Elegir plan</a
+            >{{ $t('homePage.choose') }}</a
             >
           </div>
         </div>
       </div>
     </div>
     <p class="text-center text-muted mt-5">
-      *Es el precio base, los precios pueden variar de acuerdo a la selección
-      de platos.
+      *{{ $t('homePage.terms') }}
       <br />
-      *Hay la posibilidad de un plan cena y desayuno al mismo precio que el
-      "Tempranero"
+      *{{ $t('homePage.terms2') }}
     </p>
   </section>
 </template>

@@ -5,11 +5,11 @@ export default {
 </script>
 
 <template>
-  
+  <!-- Reseñas -->
   <section class="container my-5" id="reseñas">
-    <h1 class="text-center mb-5">Reseñas</h1>
+    <h1 class="text-center mb-5">{{ $t('homePage.review') }}</h1>
     <div class="row g-4 justify-content-center">
-      
+      <!-- Reseña 1 - Profesional Joven -->
       <div class="col-lg-4 col-md-6 d-flex">
         <div
             class="card p-4 text-white border-white w-100 rounded-4 shadow-lg"
@@ -18,16 +18,13 @@ export default {
             <img src="@/assets/images/resena3.jpg" alt="Clara Cortés" class="rounded-circle me-4" width="80" height="80" />
             <div>
               <h2 class="mb-1 fs-4">Clara Cortés</h2>
-              <small class="text-secondary fs-6">Desarrolladora Web</small
+              <small class="text-secondary fs-6">{{ $t('homePage.review1') }}</small
               ><br />
               <span class="text-warning fs-5">★★★★★</span>
             </div>
           </div>
           <p class="fs-5" style="color: gray">
-            Como profesional con poco tiempo, FoodHeaven me ha permitido
-            organizar mis comidas de manera rápida y saludable, sin
-            preocuparme por planificar. ¡Es perfecto para quienes tenemos una
-            agenda llena!"
+            {{ $t('homePage.reviewText') }}
           </p>
         </div>
       </div>
@@ -40,15 +37,13 @@ export default {
             <img src="@/assets/images/resena2.jpg" alt="Leonardo Mesías" class="rounded-circle me-4" width="80" height="80" />
             <div>
               <h2 class="mb-1 fs-4">Leonardo Mesías</h2>
-              <small class="text-secondary fs-6">Padre de Familia</small
+              <small class="text-secondary fs-6">{{ $t('homePage.review2') }}</small
               ><br />
               <span class="text-warning fs-5">★★★★☆</span>
             </div>
           </div>
           <p class="fs-5" style="color: gray">
-            Como padre de familia, me resulta difícil organizar las comidas.
-            FoodHeaven no solo me ahorra tiempo, sino que también me ayuda a
-            planificar opciones saludables para mi familia. ¡Muy recomendable!
+            {{ $t('homePage.reviewText2') }}
           </p>
         </div>
       </div>
@@ -61,15 +56,13 @@ export default {
             <img src="@/assets/images/resena1.jpg" alt="Daniel Moreno" class="rounded-circle me-4" width="80" height="80" />
             <div>
               <h2 class="mb-1 fs-4">Daniel Moreno</h2>
-              <small class="text-secondary fs-6">Gerente de Marketing</small
+              <small class="text-secondary fs-6">{{ $t('homePage.review3') }}</small
               ><br />
               <span class="text-warning fs-5">★★★★★</span>
             </div>
           </div>
           <p class="fs-5" style="color: gray">
-            Mi trabajo es demandante y siempre me resulta difícil mantenerme
-            saludable. FoodHeaven me ayuda a tener un menú personalizado,
-            nutritivo y rápido. ¡Es todo lo que necesitaba!
+            {{ $t('homePage.reviewText3') }}
           </p>
         </div>
       </div>

@@ -7,16 +7,15 @@ export default {
 <template>
   <!-- Servicios -->
   <section class="container mt-5" id="servicios">
-    <h1 class="text-center mb-4">Servicios</h1>
+    <h1 class="text-center mb-4">{{ $t('homePage.service') }}</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-calendar-check display-4 mb-3"></i>
-            <h2 class="card-title">Planificación Semanal</h2>
+            <h2 class="card-title">{{ $t('homePage.plan') }}</h2>
             <p class="card-text">
-              Organiza tus comidas de la semana según tus necesidades
-              nutricionales y preferencias personales.
+              {{ $t('homePage.textService') }}
             </p>
           </div>
         </div>
@@ -27,10 +26,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-shop-window display-4 mb-3"></i>
-            <h2 class="card-title">Proveedores Personalizados</h2>
+            <h2 class="card-title">{{ $t('homePage.plan2') }}</h2>
             <p class="card-text">
-              Conéctate con una red diversa de proveedores que se adaptan a
-              tus gustos y estilo de vida.
+              {{ $t('homePage.textService2') }}
             </p>
           </div>
         </div>
@@ -41,10 +39,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-heart-pulse-fill display-4 mb-3"></i>
-            <h2 class="card-title">Control Nutricional</h2>
+            <h2 class="card-title">{{ $t('homePage.plan3') }}</h2>
             <p class="card-text">
-              Sigue tu dieta con un contador de calorías y balance nutricional
-              adaptado a tus objetivos.
+              {{ $t('homePage.textService3') }}
             </p>
           </div>
         </div>
@@ -55,10 +52,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-truck display-4 mb-3"></i>
-            <h2 class="card-title">Entrega a Domicilio</h2>
+            <h2 class="card-title">{{ $t('homePage.plan4') }}</h2>
             <p class="card-text">
-              Recibe tus comidas en el horario que prefieras, directamente en
-              tu casa u oficina.
+              {{ $t('homePage.textService4') }}
             </p>
           </div>
         </div>
@@ -69,9 +65,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-star-fill display-4 mb-3"></i>
-            <h2 class="card-title">Gran calidad</h2>
+            <h2 class="card-title">{{ $t('homePage.plan5') }}</h2>
             <p class="card-text">
-              Podemos presumir de tener gran calidad tanto en sabor como en salubridad.
+              {{ $t('homePage.textService5') }}
             </p>
           </div>
         </div>
@@ -82,10 +78,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-credit-card-2-front-fill display-4 mb-3"></i>
-            <h2 class="card-title">Planes de Suscripción</h2>
+            <h2 class="card-title">{{ $t('homePage.plan6') }}</h2>
             <p class="card-text">
-              Elige entre diferentes planes mensuales según la cantidad de
-              comidas y servicios que necesitas.
+              {{ $t('homePage.textService6') }}
             </p>
           </div>
         </div>

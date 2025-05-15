@@ -10,10 +10,10 @@ export default {
         class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column"
     >
       <h3 class="text-center">
-        Come bien, sin pensar de más. FoodHeaven lo hace por ti.
+        {{ $t('homePage.textHero') }}
       </h3>
-      <p>Tu semana, tus platos. Alimentación inteligente con FoodHeaven.</p>
-      <a href="register.html" class="signin-button">Registrate</a>
+      <p>{{ $t('homePage.textHero2') }}</p>
+      <a href="register.html" class="signin-button">{{ $t('homePage.register') }}</a>
     </div>
   </section>
 </template>

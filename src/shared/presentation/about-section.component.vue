@@ -14,13 +14,9 @@ export default {
       <div class="acerca-texto">
         <img src="@/assets/images/logo.png" alt="Logo" width="80" class="mb-3" />
         <p>
-          FoodHeaven es una plataforma web que transforma la forma en que
-          organizas tus comidas semanales. Elige entre una amplia variedad de
-          opciones para desayuno, almuerzo y cena, personalizadas segÃºn tus
-          preferencias, objetivos nutricionales y estilo de vida. Simplifica
-          tu rutina, come mejor y disfruta cada bocado.
+          {{ $t('homePage.textAbout') }}
         </p>
-        <a href="register.html" class="portada-button">Registrate</a>
+        <a href="register.html" class="portada-button">{{ $t('homePage.register') }}</a>
       </div>
     </div>
   </section>

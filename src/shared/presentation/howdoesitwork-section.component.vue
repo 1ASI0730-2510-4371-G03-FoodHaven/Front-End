@@ -7,15 +7,15 @@ export default {
 <template>
   <!-- ¿Cómo Funciona? -->
   <section class="container mt-5" id="comofunciona">
-    <h1 class="text-center mb-4">¿Cómo Funciona?</h1>
+    <h1 class="text-center mb-4">{{ $t('homePage.works') }}</h1>
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-person-plus-fill display-4 mb-3"></i>
-            <h2 class="card-title">Crea tu Cuenta</h2>
+            <h2 class="card-title">{{ $t('homePage.works1') }}</h2>
             <p class="card-text">
-              Regístrate de manera rápida y fácil desde cualquier dispositivo para acceder a tu plan de comidas personalizado.
+              {{ $t('homePage.textWork') }}
             </p>
           </div>
         </div>
@@ -24,9 +24,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-heart display-4 mb-3"></i>
-            <h2 class="card-title">Configura tus Preferencias</h2>
+            <h2 class="card-title">{{ $t('homePage.works2') }}</h2>
             <p class="card-text">
-              Indica tus gustos, restricciones alimenticias, y objetivos nutricionales para que el sistema cree el mejor plan para ti.
+              {{ $t('homePage.textWork2') }}
             </p>
           </div>
         </div>
@@ -35,9 +35,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-calendar-event display-4 mb-3"></i>
-            <h2 class="card-title">Recibe tu Plan Semanal</h2>
+            <h2 class="card-title">{{ $t('homePage.works3') }}</h2>
             <p class="card-text">
-              Obtén un menú semanal adaptado a tus necesidades, incluyendo desayuno, almuerzo y cena, listo para planificar.
+              {{ $t('homePage.textWork3') }}
             </p>
           </div>
         </div>
@@ -46,9 +46,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-cart-check display-4 mb-3"></i>
-            <h2 class="card-title">Proveedores de Confianza</h2>
+            <h2 class="card-title">{{ $t('homePage.works4') }}</h2>
             <p class="card-text">
-              Trabajamos con cocineros independientes y restaurantes locales verificados para garantizar calidad, sabor y frescura en cada comida.
+              {{ $t('homePage.textWork4') }}
             </p>
           </div>
         </div>
@@ -57,9 +57,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-basket display-4 mb-3"></i>
-            <h2 class="card-title">Recibe tus Comidas</h2>
+            <h2 class="card-title">{{ $t('homePage.works5') }}</h2>
             <p class="card-text">
-              Disfruta tus platos listos sin cocinar. Nosotros coordinamos con los proveedores y nos encargamos de la entrega.
+              {{ $t('homePage.textWork5') }}
             </p>
           </div>
         </div>
@@ -68,9 +68,9 @@ export default {
         <div class="card h-100 text-center servicio">
           <div class="card-body">
             <i class="bi bi-graph-up display-4 mb-3"></i>
-            <h2 class="card-title">Rastrea tu Progreso</h2>
+            <h2 class="card-title">{{ $t('homePage.works6') }}</h2>
             <p class="card-text">
-              Monitorea tu progreso nutricional y ajusta tus planes según tus preferencias.
+              {{ $t('homePage.textWork6') }}
             </p>
           </div>
         </div>
